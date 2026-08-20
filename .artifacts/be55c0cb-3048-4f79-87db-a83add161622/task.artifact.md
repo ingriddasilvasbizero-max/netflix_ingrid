@@ -1,0 +1,5 @@
+- [x] Fix overlapping "Populares" movies on Home screen
+- [x] Separate Movies catalog (`filmes.xml`)
+- [x] Separate Series catalog (`series.xml`)
+- [x] Update `MainActivity.java` with new catalog navigation
+- [x] Link Home screen headers to respective pages

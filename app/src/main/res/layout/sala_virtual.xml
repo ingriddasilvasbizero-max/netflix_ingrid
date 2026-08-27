@@ -15,11 +15,13 @@
 
         <ImageButton
             android:id="@+id/btn_back_player"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="top|end"
             android:background="@null"
-            android:src="@android:drawable/ic_menu_revert"
+            android:src="@drawable/seta"
+            android:scaleType="fitCenter"
             app:tint="@color/white"
             android:contentDescription="Voltar"/>
 

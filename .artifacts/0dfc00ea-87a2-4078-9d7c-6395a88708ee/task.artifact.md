@@ -1,0 +1,5 @@
+- `[x]` Replace back arrow in `series.xml`
+- `[x]` Replace back arrow in `filmes.xml`
+- `[x]` Replace back arrow in `minha_lista.xml`
+- `[x]` Replace back arrow in `explorar.xml`
+- `[x]` Verify changes in layout preview

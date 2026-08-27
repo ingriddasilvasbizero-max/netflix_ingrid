@@ -63,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         if (tvFilmes != null) {
             tvFilmes.setOnClickListener(v -> showMoviesCatalog());
         }
+
+        View tvMinhaLista = findViewById(R.id.tv_minha_lista);
+        if (tvMinhaLista != null) {
+            tvMinhaLista.setOnClickListener(v -> showMyList());
+        }
     }
 
     private void showLobby() {
@@ -109,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void showMyList() {
+        setContentView(R.layout.minha_lista);
+        View btnBack = findViewById(R.id.btn_back_my_list);
+        if (btnBack != null) {
+            btnBack.setOnClickListener(v -> showHome());
+        }
+    }
+
     @Override
     public void onBackPressed() {
         if (findViewById(R.id.video_container) != null) {
@@ -116,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (findViewById(R.id.tv_title) != null || // Lobby
                    findViewById(R.id.tv_profile_title) != null || // Profile
                    findViewById(R.id.tv_movies_title) != null || // Movies
+                   findViewById(R.id.tv_my_list_title) != null || // My List
                    findViewById(R.id.tv_series_title) != null) { // Series
             showHome();
         } else if (findViewById(R.id.logo) != null) {

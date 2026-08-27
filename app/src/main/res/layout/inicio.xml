@@ -122,7 +122,7 @@
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="140dp"
+                        android:layout_width="149dp"
                         android:layout_height="200dp"
                         android:layout_margin="4dp"
                         android:scaleType="centerCrop"
@@ -130,8 +130,8 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="140dp"
-                        android:layout_height="200dp"
+                        android:layout_width="138dp"
+                        android:layout_height="202dp"
                         android:layout_margin="4dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/rm" />
@@ -139,8 +139,8 @@
                     <!-- Espaço extra no final -->
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="140dp"
-                        android:layout_height="200dp"
+                        android:layout_width="127dp"
+                        android:layout_height="212dp"
                         android:layout_margin="4dp"
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/it" />

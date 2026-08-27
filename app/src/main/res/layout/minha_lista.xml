@@ -7,11 +7,11 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/tv_movies_title"
+        android:id="@+id/tv_my_list_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Filmes"
+        android:text="@string/title_my_list"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -21,10 +21,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_movies_title"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_list_title">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,103 +31,60 @@
             android:orientation="vertical"
             android:padding="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Lançamentos"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:alignmentMode="alignMargins"
                 android:columnCount="3">
 
+                <!-- Placeholder items for My List -->
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/img_list_1"
                     android:layout_width="0dp"
                     android:layout_height="220dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="4dp"
-                    android:contentDescription="Poster do filme Anna"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/anna" />
+                    android:contentDescription="@string/img_series_desc"
+                    app:srcCompat="@drawable/ha" />
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/img_list_2"
                     android:layout_width="0dp"
                     android:layout_height="220dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="4dp"
-                    android:contentDescription="Poster do filme Fuja"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/fuja" />
+                    android:contentDescription="@string/img_series_desc"
+                    app:srcCompat="@drawable/st" />
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/img_list_3"
                     android:layout_width="0dp"
                     android:layout_height="220dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="4dp"
-                    android:contentDescription="Poster do filme Inn"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/inn" />
-            </GridLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="@string/section_comedy"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="3">
+                    android:contentDescription="@string/img_series_desc"
+                    app:srcCompat="@drawable/bb" />
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/img_list_4"
                     android:layout_width="0dp"
                     android:layout_height="220dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="4dp"
-                    android:contentDescription="@string/desc_cara"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/cara" />
+                    android:contentDescription="@string/img_series_desc"
+                    app:srcCompat="@drawable/rm" />
 
-                <ImageView
-                    android:id="@+id/imageView16"
-                    android:layout_width="0dp"
-                    android:layout_height="220dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    android:contentDescription="@string/desc_gg"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/gg" />
-
-                <ImageView
-                    android:id="@+id/imageView17"
-                    android:layout_width="0dp"
-                    android:layout_height="220dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="4dp"
-                    android:contentDescription="@string/desc_de"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/de" />
             </GridLayout>
 
         </LinearLayout>
     </ScrollView>
 
     <ImageButton
-        android:id="@+id/btn_back_movies"
+        android:id="@+id/btn_back_my_list"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_margin="12dp"
@@ -138,6 +94,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/white"
-        android:contentDescription="Voltar"/>
+        android:contentDescription="@string/btn_back_desc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
